@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "maudsley"
   gem.homepage = "http://github.com/calorie/maudsley"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Maudsley is a set of tools for the automation of builds and test running for MPI.}
+  gem.description = %Q{Maudsley can deploy all of its guts into a folder. This allows it to be used without having to worry about external dependencies.}
   gem.email = "s2g4t1n2@gmail.com"
   gem.authors = ["YuuShigetani"]
   # dependencies defined in Gemfile
