@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.date = "2014-06-15"
   s.description = "Maudsley can deploy all of its guts into a folder. This allows it to be used without having to worry about external dependencies."
   s.email = "s2g4t1n2@gmail.com"
+  s.executables = ["maudsley"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -26,9 +27,27 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "assets/Rakefile",
+    "assets/project.yml",
+    "bin/maudsley",
+    "example/spec/cpi_spec.c",
+    "example/spec/fabs_spec.c",
+    "example/spec/strcmp_spec.c",
+    "example/src/cpi.c",
+    "example/src/cpi.h",
     "lib/maudsley.rb",
+    "lib/maudsley/accessor.rb",
+    "lib/maudsley/cli.rb",
+    "lib/maudsley/configurator.rb",
+    "lib/maudsley/generator.rb",
+    "lib/maudsley/rakefile.rb",
+    "lib/maudsley/runner.rb",
+    "maudsley.gemspec",
     "spec/maudsley_spec.rb",
-    "spec/spec_helper.rb"
+    "spec/spec_helper.rb",
+    "tasks/tests.rake",
+    "template/Gemfile.erb",
+    "template/main_spec.c.erb"
   ]
   s.homepage = "http://github.com/calorie/maudsley"
   s.licenses = ["MIT"]

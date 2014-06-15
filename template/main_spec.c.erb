@@ -1,0 +1,12 @@
+#include "mpispec/mpispec.h"
+<% headers.each do |header| %>
+#include "../src/<%= header %>"
+<% end %>
+
+mpispec_init
+
+<% specs.each do |spec| %>
+  MPISpec_Run( <%= spec %> )
+<% end %>
+
+mpispec_finalize

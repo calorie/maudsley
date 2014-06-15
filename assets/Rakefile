@@ -1,0 +1,8 @@
+project_root = File.expand_path(File.dirname(__FILE__))
+ENV['MAUDSLEY_PROJECT_ROOT'] ||= project_root
+maudsley_root = File.join(project_root, 'vendor', 'maudsley')
+maudsley_lib  = File.join(maudsley_root, 'lib')
+$LOAD_PATH.unshift(maudsley_lib)
+load 'maudsley/rakefile.rb'
+
+task default: 'spec:all'
